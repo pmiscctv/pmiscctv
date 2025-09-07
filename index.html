@@ -6,20 +6,19 @@
     <title>PM Infotech & Securities</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-        /* Scrollable image gallery styles */
+        /* Normal image gallery styles */
         .scroll-container {
             display: flex;
-            overflow-x: auto;
+            flex-wrap: wrap; /* ✅ allows images to wrap to new line */
             gap: 15px;
             padding: 15px;
-            scroll-behavior: smooth;
             background: #f9f9f9; /* optional */
             border-radius: 10px;
+            justify-content: center; /* ✅ center images */
         }
 
             .scroll-container img {
                 height: 120px;
-                flex-shrink: 0;
                 border-radius: 8px;
                 transition: transform 0.3s ease;
             }
@@ -27,16 +26,6 @@
                 .scroll-container img:hover {
                     transform: scale(1.05);
                 }
-
-            /* Hide scrollbar (optional) */
-            /*.scroll-container::-webkit-scrollbar {
-                display: none;*/
-            }
-
-        .scroll-container {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
     </style>
 </head>
 <body>
@@ -50,7 +39,7 @@
                     text-align: center; /* Center the text */
                     border-radius: 8px; /* Optional: rounded corners */
                     font-family: "Georgia", sans-serif; /* Change font style */
-                    font-size: 20px; /* Optional: adjust text size */
+                    font-size: 32px; /* Optional: adjust text size */
                     /*font-weight: bold;*/ /* Optional: bold text */
                     font-style: italic; /* Optional: italic text */
                 }
@@ -71,15 +60,22 @@
                     <img src="images/Brand Logo.jpg" alt="My Image" class="center-small-img">
                 </div>
             </section>
-           
-            
-            Your Trusted CCTV Wholesale Partner in Telangana<br>
-+91-9966337002<br>
-Click on the icon to connect on WhatsApp
-            <a href="https://wa.me/919966337002" target="_blank">
+            <style>
+                h1 {
+                    background-color: #FFFFFF; /* Green background */
+                    color: #000000; /* White text */
+                    padding: 20px; /* Space around the text */
+                    text-align: center; /* Center the text */
+                    border-radius: 8px; /* Optional: rounded corners */
+                }
+            </style>
+            Contact Us at +91-9966334002
+            <a href="https://wa.me/919966334002" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
                      alt="WhatsApp" width="40" height="40">
             </a>
+            <br>Your Trusted CCTV Wholesale Partner in Telangana
+
 
         </h1>
         <nav>
@@ -98,7 +94,7 @@ Click on the icon to connect on WhatsApp
                     padding: 20px; /* Space around the text */
                     text-align: justify; /* Center the text */
                     border-radius: 8px; /* Optional: rounded corners */
-                    font-family: "Courier", sans-serif; /* Change font style */
+                    font-family: "Georgia", sans-serif; /* Change font style */
                     font-size: 12px; /* Optional: adjust text size */
                     /*font-weight: bold;*/ /* Optional: bold text*/
                     font-style: italic; /*Optional: italic text*/
@@ -170,6 +166,3 @@ Click on the icon to connect on WhatsApp
     </footer>
 </body>
 </html>
-
-
-
