@@ -39,19 +39,19 @@
                     padding: 20px; /* Space around the text */
                     text-align: center; /* Center the text */
                     border-radius: 6px; /* Optional: rounded corners */
-                    font-family: "Georgia", sans-serif; /* Change font style */
+                    font-family: Arial, sans-serif; /* Change font style */
                     font-size: 32px; /* Optional: adjust text size */
                     /*font-weight: bold;*/ /* Optional: bold text */
-                    font-style: italic; /* Optional: italic text */
+                    font-style: normal; /* Optional: italic text */
                 }
             </style>
 
-            <section>
+            <!--<section>
                 <style>
                     .center-small-img {
                         display: block;
                         margin: auto;
-                        width: 100%; /* or use px like 200px */
+                        width: 50%; /* or use px like 200px */
                         max-width: 700px; /* optional max size */
                         height: auto; /* keeps aspect ratio */
                     }
@@ -60,15 +60,54 @@
                 <div class="image-container">
                     <img src="images/Brand Logo.jpg" alt="My Image" class="center-small-img">
                 </div>
-              
+                <div class="image-container">
+                    <img src="images/Brand Logo 2.jpg" alt="My Image" class="center-small-img">
+                </div>
+            </section>-->
+
+            <section>
+                <style>
+                    .image-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 20px;
+                        text-align: center;
+                    }
+
+                        .image-grid img {
+                            width: 100%;
+                            height: 180px; /* fixed height for uniform size */
+                            object-fit: contain; /* crop image to fit */
+                            border-radius: 8px; /* optional rounded corners */
+                            box-shadow: 0 3px 8px rgba(0,0,0,0.15); /* optional subtle shadow */
+                        }
+
+                        .image-grid figcaption {
+                            margin-top: 8px;
+                            font-family: "Arial", sans-serif;
+                            font-size: 15px;
+                            font-weight: 600;
+                            font-style: italic;
+                            color: #222;
+                        }
+                </style>
+
+                <div class="image-grid">
+                    <figure>
+                        <img src="images/Brand Logo.jpg" alt="Image 1">
+                        <figcaption>@Gujarati Gali</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/Brand Logo 2.jpg" alt="Image 2">
+                        <figcaption>@Secunderabad</figcaption>
+                    </figure>
+
+                </div>
             </section>
-
-
-           <!-- Your Trusted CCTV Wholesale Partner in Telangana<br>-->
+            <!-- Your Trusted CCTV Wholesale Partner in Telangana<br>-->
             <a href="https://wa.me/919966334002" target="_blank">
                 9966334002
             </a>
-
 
 
 
